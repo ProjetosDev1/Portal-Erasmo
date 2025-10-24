@@ -1,0 +1,141 @@
+/*----------HTML & BODY----------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #ffcbff;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------HEADER----------*/
+
+header {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #197ceead;
+    padding: 20px;
+}
+
+.barra-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: auto;
+}
+
+.barra-nav a {
+    height: 43px;
+    width: 45px;
+    margin-left: 8px;
+}
+
+.barra-nav img {
+    width: 100%;
+    height: 100%;
+}
+
+.barra-nav h1 {
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+/*----------MAIN----------*/
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+article {
+    flex-direction: column;
+    align-items: center;
+}}
+
+
+article {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#botao{
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 0 12px #197ceead;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 250px;
+}
+
+#botao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px gray;
+}
+
+#botao h3 {
+    margin-bottom: 10px;    
+}
+
+/*----------FOOTER----------*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #014f86;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.rodape div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    height: 20px;
+}
+
+.rodape a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rodape p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
