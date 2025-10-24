@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="images/png" href="favicon.cen.png">
+        <link rel="stylesheet" href="CSS/home.css">
+
+    <title>Portal Erasmo</title>
+</head>
+<body>
+
+    <!---------------HEADER--------------->
+    <header>
+        <section>
+            <div>
+                <h1 id="titulo">Bem-vindo ao Portal Erasmo</h1>
+            </div>
+        </section>
+    </header>
+
+    <!---------------MAIN--------------->
+    <!----------LATERAL ESQUERDA---------->
+
+    <main> 
+        <div class="pagina">  
+            <aside class="left">
+                <h1 id="title-left">🚀 Tecnologias</h1>
+
+                <div class="post-left">
+                    <img src="images/Onclin/iconeOnclin.png" alt="icone_onclin">
+                    <h2>Onclin</h2>
+                    <p>Plataforma privada desenvolvida para otimizar o fluxo de atendimentos e relatórios clínicos.</p>
+                </div>
+
+                <div class="post-left">
+                    <img src="images/Email/icone_email.png" alt="icone_email">
+                    <h2>Webmail</h2>
+                    <p>Ferramenta online que permite acessar e gerenciar seus e-mails corporativos de forma prática e segura.</p>
+                </div>     
+
+                <div class="post-left">
+                    <img src="images/Chamado/icone_chamado.png" alt="icone_painel">
+                    <p>Sistema que centraliza e organiza as solicitações internas e voltadas ao setor de Tecnologia.</p>
+                </div>
+
+                <div class="post-left">
+                    <img src="images/Spark/icone_spark.png" alt="icone_spark">
+                    <h2>Spark</h2>
+                    <p>Programa de comunicação interno que conecta equipes de forma prática e ágil, centralizando avisos, comunicados e informações importantes em um só lugar.</p>
+                </div>
+            </aside>
+
+    <!----------CENTRO DA PÁGINA---------->
+
+            <section class="center">   
+                <h1 id="title-center">🤝 Sobre</h1> 
+
+                <article class="sobre">
+                    <h2>Facilitando logins, Guiando processos e Fortalecendo a Equipe!</h2><br>
+
+                    <p>O Portal Erasmo é uma plataforma interna criada para aprimorar a comunicação e a eficiência nos processos
+                    da equipe da Clínicas Erasmo Neto. Aqui, os profissionais e colaboradores têm acesso facilitado a guias,
+                    relatórios e instruções para seu papel, centralizados em um ambiente seguro e intuitivo.</p> 
+
+                    <p>Este sistema tem como missão transformar fluxos manuais e dispersos em uma ambiente organizado e transparente com o objetivo de:</p>
+                    <ul>
+                        <li>🔁 Reduzir retrabalho;</li>
+                        <li>📋 Padronizar procedimentos;</li>
+                        <li>💪 Promover autonomia dos colaboradores;</li>
+                        <li>⚡ Agilizar solicitações e acompanhamento de relatórios;</li>
+                    </ul><br>
+
+                    <p>📌 Ao concentrar protocolos, orientações e relatórios em um só lugar, o Portal Erasmo facilita o dia a dia da equipe e fortalece o 
+                    compromisso com eficiência, clareza e cooperação institucional.</p>               
+                </article>
+
+    <!--IMAGENS-->
+
+                <section class="carrossel">
+                    <div class="imagens">
+                        <div class="slide"><img src="images/Carrossel/onclin_home.png" alt="img1"></div>
+                        <div class="slide"><img src="images/Carrossel/webmail_home.png" alt="img2"></div>
+                        <div class="slide"><img src="images/Carrossel/spark_home.png" alt="img3"></div>
+                    </div>
+
+                    <button class="voltar">&#10094;</button>
+                    <button class="avancar">&#10095;</button>
+                </section>
+            </section>
+
+    <!----------LARETAL DIREITA---------->
+
+            <nav class="right">
+                <h1 id="title-right">⚡Acesso Rápido</h1>
+
+                <a href="acesso.html">
+                <div class="post-right">
+                    <img src="images/Onclin/iconeOnclin.png" alt="icone_onclin">
+                    <span>Onclin - Erro Inicial</span>
+                </div></a>
+
+                <a href="email.html">
+                <div class="post-right">
+                    <img src="images/Email/icone_email.png" alt="icone_email"> 
+                    <span>E-mails Maliciosos</span>
+                </div></a>
+
+                <a href="spark.html">
+                <div class="post-right">
+                    <img src="images/Spark/icone_spark.png" alt="icone_spark">  
+                    <span>Configuração Spark</span>
+                </div></a>
+
+                <a href="Internet.html">
+                <div class="post-right">
+                    <img src="images/Rede/icone_internet.png" alt="icone_rede">
+                    <span>Internet</span>
+                </div></a>
+
+                <div id="botao">
+                    <a href="suporte.html" id="buttonpage"><span>Acesso aos Guias ➡️</span></a>
+                </div>
+
+                <div class="logos">
+                    <img src="images/Clinicas/logo-erasmo_300x300.png" alt="logo_erasmo">
+                    <img src="images/Clinicas/logo-nacen_300x300.png" alt="logo_nacen">
+                </div> 
+            </nav>
+        </div>
+
+    </main>
+
+    <!---------------FOOTER--------------->
+    <footer>
+        <section class="rodape">
+            <div>
+                <a href="https://www.clinicaserasmoneto.com.br/"><i>© 2025 - Clinicas Erasmo Neto.</i></a> <p><i>Todos os direitos reservados.</i></p>
+            </div>
+        </section>
+    </footer>
+
+    <script>     
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const container = document.querySelector('.imagens');
+
+        document.querySelector('.avancar').addEventListener('click', () => {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            updateSlidePosition();
+});
+
+        document.querySelector('.voltar').addEventListener('click', () => {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+});
+
+        function updateSlidePosition() {
+        container.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+</script>
+</body>
+</html>
