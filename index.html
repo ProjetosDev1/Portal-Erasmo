@@ -115,7 +115,7 @@
                 <a href="Internet.html">
                 <div class="post-right">
                     <img src="images/Rede/icone_internet.png" alt="icone_rede">
-                    <span>Internet</span>
+                    <span>Conexão à Internet</span>
                 </div></a>
 
                 <div id="botao">
@@ -149,16 +149,17 @@
         document.querySelector('.avancar').addEventListener('click', () => {
             slideIndex = (slideIndex + 1) % totalSlides;
             updateSlidePosition();
-});
+    });
 
         document.querySelector('.voltar').addEventListener('click', () => {
             slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
             updateSlidePosition();
-});
+    });
 
         function updateSlidePosition() {
         container.style.transform = `translateX(-${slideIndex * 100}%)`;
-}
-</script>
+    }
+    </script>
 </body>
+
 </html>
